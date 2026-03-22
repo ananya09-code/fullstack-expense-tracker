@@ -1,0 +1,81 @@
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(135deg, #6dd5ed, #2193b0, #0c52ca);
+}
+
+.log-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width:40vw ;
+    font-size: 12px;
+    height: 50vh;
+    padding: 50px 50px 50px;
+    padding-top: 0px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    text-align: center;
+
+}
+.log-con h1{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.log-con h4{
+    font-size: 1.2rem;
+}
+.log-con p{
+    font-size: 0.8rem;
+    opacity: 0.5;
+}
+.log-con form{
+    display: flex;
+    flex-direction: column;
+     width: 100%;
+    gap: 10px;
+}
+.log-con input{
+    background-color: rgb(249, 249, 249);
+    color: rgb(0, 0, 0);
+    opacity: 0.7;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+.log-con label{
+    opacity: 0.6;
+}
+
+
+.log-con button{
+   background: linear-gradient(135deg, #6dd5ed, #2193b0, #0c52ca);
+    padding: 5px;
+    border-radius: 5PX;
+    color: beige;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px;
+
+}
+
+.log-con button:hover{
+        background: linear-gradient(135deg, #90cad7, #93c4d0, #79a8f9);
+}
+.log-con button:hover{
+    transform: scale(1.05);
+    transition: 0.2s;
+}
+/* Hide the signup form by default */
+.signup-form { display: none; }
+
+/* Show it only when the container has the .signup class */
+.con.signup .signup-form { display: block; }
+.con.signup .login-form { display: none; }
