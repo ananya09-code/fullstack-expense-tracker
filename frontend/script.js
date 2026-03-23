@@ -77,10 +77,14 @@ async function getdata(recdash) {
   try {
     const response = await fetch(`http://127.0.0.1:8000/see/${user_id}`);
     const data = await response.json();
+    let idnum=0
 
-    const html = data.map(e => `
+    const html = data.map(e =>
+      `
+
       <div class="card">
-        <span class="id">${e.id}</span>
+        <div class="id">${e.id}</div>
+        <span class="id-seen">${idnum+=1}</span>
         <div class="exp-title">
           <span class="dis">Description: <span class="disvalue">${e.description}</span></span>
           <span class="amou">Amount: <span class="amouvalue">${e.amount}</span></span>
